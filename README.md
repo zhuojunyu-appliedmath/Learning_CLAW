@@ -19,7 +19,7 @@ The CBGT network codebase (**CBGTPy**) utilized in this study is publicly availa
 | `DDM/Post-i/slow/traj_R_static_all.csv` | Static posterior draws for all eight main trajectories at `i = 0, 1, 3`; `R` is the trajectory-type code (for example, `traj_123_static_all.csv` corresponds to I→II→III) |
 | `DDM/Post-0/slow/traj_123_static_mean.csv` | Static posterior means for the Figure F.11 example |
 
-All stored data were generated using the methods described in our previous work: https://doi.org/10.1371/journal.pcbi.1012966
+All stored data were generated using the methods described in our previous work (https://doi.org/10.1371/journal.pcbi.1012966) with the code provided in https://github.com/zhuojunyu-appliedmath/CLAW
 
 The notebook `manuscript/data_analysis.ipynb` analyzes CBGT simulations and static DDM fits， using Python **3.8.20** in the **cbgtpy_env** environment. The CBGT network codebase (CBGTPy) is publicly available at https://github.com/CoAxLab/CBGTPy. Detailed installation instructions and a comprehensive list of implemented functions can be found in the README.txt file within the repository.
 
