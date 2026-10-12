@@ -2,7 +2,7 @@ These are the scripts to reproduce figures in the paper "How learning reweights 
 
 The CBGT network codebase (**CBGTPy**) utilized in this study is publicly available at https://github.com/CoAxLab/CBGTPy. Detailed installation instructions and a comprehensive list of implemented functions can be found in the README.txt file within the repository.
 
-`Data/` is organized by learning stage in Post-0, Post-1, Post-3, Post-8, Post-15, and Post-30, corresponding to the number of training trials. Within each stage, `slow/network_N/` contains saved simulation results (via CBGTPy), 10-ms firing rates, binary activity, and CLAW state labels. Stage-level `W_time_all_onset.csv` files contain control ensemble and policy time courses; `traj_classes.pickle` maps trajectory types to (network, trial) pairs. In particular,
+`Data/` is organized by learning stage in Post-0, Post-1, Post-3, Post-8, Post-15, and Post-30, corresponding to the number of training trials. Within each stage, `slow/network_N/` contains saved simulation results (via CBGTPy), 10-ms firing rates, binary activity, and CLAW state labels. Stage-level `W_time_all_onset.csv` files contain control ensemble and DDM parameter time courses; `traj_classes.pickle` maps trajectory types to (network, trial) pairs. In particular,
 
 | Path | Use |
 | --- | --- |
@@ -14,7 +14,7 @@ The CBGT network codebase (**CBGTPy**) utilized in this study is publicly availa
 | `Data/Post-i/slow/network_N/data_conf.csv` | Corresponding state identifiers |
 | `Data/Post-0/slow/network_N/network_N.pickle` | Pre-learning network results and behavioral tables |
 | `Data/Post-i/slow/network_N/network.pickle` | Post-learning network results for `i > 0` |
-| `Data/Post-i/W_time_all_onset.csv` | Prepared decision-phase ensemble/policy time courses for learning models, at `i = 0, 1, 3` |
+| `Data/Post-i/W_time_all_onset.csv` | Control ensemble and DDM parameter time courses for learning models, at `i = 0, 1, 3` |
 | `Data/Post-i/traj_classes.pickle` | Trajectory memberships; required at `i = 0, 1, 3, 30` |
 | `DDM/Post-i/slow/traj_R_static_all.csv` | Static posterior draws for all eight main trajectories at `i = 0, 1, 3`; `R` is the trajectory-type code (for example, `traj_123_static_all.csv` corresponds to I→II→III) |
 | `DDM/Post-0/slow/traj_123_static_mean.csv` | Static posterior means for the Figure F.11 example |
