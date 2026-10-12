@@ -21,7 +21,7 @@ The CBGT network codebase (**CBGTPy**) utilized in this study is publicly availa
 
 All stored data were generated using the methods described in our previous work (https://doi.org/10.1371/journal.pcbi.1012966) with the code provided in https://github.com/zhuojunyu-appliedmath/CLAW
 
-The notebook `manuscript/data_analysis.ipynb` analyzes CBGT simulations and static DDM fits， using Python **3.8.20** in the **cbgtpy_env** environment. The CBGT network codebase (CBGTPy) is publicly available at https://github.com/CoAxLab/CBGTPy. Detailed installation instructions and a comprehensive list of implemented functions can be found in the README.txt file within the repository.
+The notebook `manuscript/data_analysis.ipynb` analyzes CBGT simulations and static DDM fits, using Python **3.8.20** in the **cbgtpy_env** environment. The CBGT network codebase (CBGTPy) is publicly available at https://github.com/CoAxLab/CBGTPy. Detailed installation instructions and a comprehensive list of implemented functions can be found in the README.txt file within the repository.
 
 Calculations and plotting functions specific to this manuscript are in `manuscript/analysis.py`. 
 CLAW diagrams, schematics, formatted text tables, and horizontal significance bars are not plotted in the notebook. The underlying CLAW statistics and significant learning-effect bins are exported for plotting.
