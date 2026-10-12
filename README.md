@@ -1,7 +1,5 @@
 These are the scripts to reproduce figures in the paper "How learning reweights the decision dynamics of cortico-basal ganglia-thalamic pathways from deliberation to commitment" https://doi.org/10.64898/2026.02.17.706272
 
-The CBGT network codebase (**CBGTPy**) utilized in this study is publicly available at https://github.com/CoAxLab/CBGTPy. Detailed installation instructions and a comprehensive list of implemented functions can be found in the README.txt file within the repository.
-
 `Data/` is organized by learning stage in Post-0, Post-1, Post-3, Post-8, Post-15, and Post-30, corresponding to the number of training trials. Within each stage, `slow/network_N/` contains saved simulation results (via CBGTPy), 10-ms firing rates, binary activity, and CLAW state labels. Stage-level `W_time_all_onset.csv` files contain control ensemble and DDM parameter time courses; `traj_classes.pickle` maps trajectory types to (network, trial) pairs. In particular,
 
 | Path | Use |
