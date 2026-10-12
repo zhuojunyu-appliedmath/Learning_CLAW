@@ -2,9 +2,7 @@ These are the scripts to reproduce figures in the paper "How learning reweights 
 
 The CBGT network codebase (**CBGTPy**) utilized in this study is publicly available at https://github.com/CoAxLab/CBGTPy. Detailed installation instructions and a comprehensive list of implemented functions can be found in the README.txt file within the repository.
 
-The notebook `manuscript/data_analysis.ipynb` analyzes CBGT simulations and static DDM fits. The notebook uses Python **3.8.20** and the **cbgtpy_env** environment (The CBGT network codebase (CBGTPy) is publicly available at https://github.com/CoAxLab/CBGTPy. Detailed installation instructions and a comprehensive list of implemented functions can be found in the README.txt file within the repository.) Calculations and plotting functions specific for this manuscript are in `manuscript/analysis.py`. Run the notebook from top to bottom to generate CSV tables and manuscript figures.
-
-`Data/` is organized by learning stage in Post-0, Post-1, Post-3, Post-8, Post-15, and Post-30, corresponding to the number of training trials. Within each stage, `slow/network_N/` contains saved simulation results (via CBGTPy), 10-ms firing rates, binary activity, and CLAW state labels. Stage-level `W_time_all_onset.csv` files store control ensemble and policy time courses; `traj_classes.pickle` maps trajectory types to network/trial pairs. In particular,
+`Data/` is organized by learning stage in Post-0, Post-1, Post-3, Post-8, Post-15, and Post-30, corresponding to the number of training trials. Within each stage, `slow/network_N/` contains saved simulation results (via CBGTPy), 10-ms firing rates, binary activity, and CLAW state labels. Stage-level `W_time_all_onset.csv` files contain control ensemble and policy time courses; `traj_classes.pickle` maps trajectory types to network/trial pairs. In particular,
 
 | Path | Use |
 | --- | --- |
@@ -20,3 +18,11 @@ The notebook `manuscript/data_analysis.ipynb` analyzes CBGT simulations and stat
 | `Data/Post-i/traj_classes.pickle` | Trajectory memberships; required at `i = 0, 1, 3, 30` |
 | `DDM/Post-i/slow/traj_R_static_all.csv` | Static posterior draws for all eight main trajectories at `i = 0, 1, 3`; `R` is the trajectory-type code (for example, `traj_123_static_all.csv` corresponds to I→II→III) |
 | `DDM/Post-0/slow/traj_123_static_mean.csv` | Static posterior means for the Figure F.11 example |
+
+All stored data were generated using the methods described in our previous work: https://doi.org/10.1371/journal.pcbi.1012966
+
+The notebook `manuscript/data_analysis.ipynb` analyzes CBGT simulations and static DDM fits. 
+The notebook uses Python **3.8.20** and the **cbgtpy_env** environment (The CBGT network codebase (CBGTPy) is publicly available at https://github.com/CoAxLab/CBGTPy. Detailed installation instructions and a comprehensive list of implemented functions can be found in the README.txt file within the repository.) 
+Calculations and plotting functions specific for this manuscript are in `manuscript/analysis.py`. 
+CLAW diagrams, schematics, formatted text tables, and horizontal significance bars are not plotted om the notebook. The underlying CLAW statistics and significant learning-effect bins are exported for plotting.
+To generate the exported tables and all the other manuscript figures, run the notebook from top to bottom.
